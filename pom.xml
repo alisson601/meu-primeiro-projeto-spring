@@ -13,7 +13,7 @@
 	<artifactId>meu-primeiro-projeto-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MeuPrimeiroProjetoSpring</name>
-	<description>Minha Primeira Aplicação Spring</description>
+	<description>Minha primeira aplicação Spring</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -27,15 +27,14 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-			<version>2.1.4.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
 		</dependency>
 
 		<dependency>
@@ -44,28 +43,28 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-			<version>2.1.4.RELEASE</version>
+
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.15</version>
+
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
-		
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<version>1.4.197</version>
 			<scope>test</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>2.1.4.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>
